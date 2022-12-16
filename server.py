@@ -29,5 +29,10 @@ def about():
     return render_template("about.html")
 
 
+@app.route('/bootstrap')
+def bootstrap():
+    return render_template("bootstrap.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)  # дебаг даёт перезагрузку и тестирование сайте, пустой будет не выдавать ошибки
